@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio fotográfico</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar with image -->
+    <nav
+      class="untref-sidebar untref-hide-medium untref-hide-small"
+      style="width: 40%"
+    >
+      <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav
+      class="untref-sidebar untref-black untref-animate-right untref-xxlarge"
+      style="display: none; padding-top: 150px; right: 0; z-index: 2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="closeNav()"
+        class="untref-button untref-black untref-xxxlarge untref-display-topright"
+        style="padding: 0 12px"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="untref-bar-block untref-center">
+        <a
+          href="#"
+          class="untref-bar-item untref-button untref-text-grey untref-hover-black"
+          onclick="closeNav()"
+          >Home</a
+        >
+        <a
+          href="#portfolio"
+          class="untref-bar-item untref-button untref-text-grey untref-hover-black"
+          onclick="closeNav()"
+          >Portfolio</a
+        >
+        <a
+          href="#about"
+          class="untref-bar-item untref-button untref-text-grey untref-hover-black"
+          onclick="closeNav()"
+          >About</a
+        >
+        <a
+          href="#contact"
+          class="untref-bar-item untref-button untref-text-grey untref-hover-black"
+          onclick="closeNav()"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="untref-main untref-padding-large" style="margin-left: 40%">
+      <!-- Menu icon to open sidebar -->
+      <span
+        class="untref-button untref-top untref-white untref-xxlarge untref-text-grey untref-hover-text-black"
+        style="width: auto; right: 0"
+        onclick="openNav()"
+        ><i class="fa fa-bars"></i
+      ></span>
+
+      <!-- Header -->
+      <header
+        class="untref-container untref-center"
+        style="padding: 128px 16px"
+        id="home"
+      >
+        <h1 class="untref-jumbo"><b>Jane Doe</b></h1>
+        <p>Photographer and Web Designer.</p>
+        <img
+          src="./img/profile_girl.png"
+          class="untref-image untref-hide-large untref-hide-small untref-round"
+          style="display: block; width: 60%; margin: auto"
+        />
+        <img
+          src="./img/profile_girl.png"
+          class="untref-image untref-hide-large untref-hide-medium untref-round"
+          width="1000"
+          height="1333"
+        />
+        <button
+          class="untref-button untref-light-grey untref-padding-large untref-margin-top"
+        >
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+      </header>
+
+      <!-- Portfolio Section -->
+      <section class="untref-padding-32 untref-content" id="portfolio">
+        <h2 class="untref-text-grey">My Portfolio</h2>
+        <hr class="untref-opacity" />
+
+        <!-- Grid for photos -->
+        <div class="untref-row-padding" style="margin: 0 -16px">
+          <div class="untref-half">
+            <img src="./img/wedding.png" style="width: 100%" />
+            <img src="./img/rocks.png" style="width: 100%" />
+            <img src="./img/sailboat.png" style="width: 100%" />
+          </div>
+
+          <div class="untref-half">
+            <img src="./img/underwater.png" style="width: 100%" />
+            <img src="./img/chef.png" style="width: 100%" />
+            <img src="./img/wedding.png" style="width: 100%" />
+            <img src="./img/p6.png" style="width: 100%" />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </section>
+
+      <!-- About Section -->
+      <section
+        class="untref-content untref-justify untref-text-grey untref-padding-32"
+        id="about"
+      >
+        <h2>About</h2>
+        <hr class="untref-opacity" />
+        <p>
+          Some text about me. Some text about me. I am lorem ipsum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <h3 class="untref-padding-16">My Skills</h3>
+        <p class="untref-wide">Photography</p>
+        <div class="untref-light-grey">
+          <div
+            class="untref-container untref-center untref-padding-small untref-dark-grey"
+            style="width: 95%"
+          >
+            95%
+          </div>
+        </div>
+        <p class="untref-wide">Web Design</p>
+        <div class="untref-light-grey">
+          <div
+            class="untref-container untref-center untref-padding-small untref-dark-grey"
+            style="width: 85%"
+          >
+            85%
+          </div>
+        </div>
+        <p class="untref-wide">Photoshop</p>
+        <div class="untref-light-grey">
+          <div
+            class="untref-container untref-center untref-padding-small untref-dark-grey"
+            style="width: 80%"
+          >
+            80%
+          </div>
+        </div>
+        <br />
+
+        <div
+          class="untref-row untref-center untref-dark-grey untref-padding-16 untref-section"
+        >
+          <div class="untref-quarter untref-section">
+            <span class="untref-xlarge">14+</span><br />
+            Partners
+          </div>
+          <div class="untref-quarter untref-section">
+            <span class="untref-xlarge">55+</span><br />
+            Projects Done
+          </div>
+          <div class="untref-quarter untref-section">
+            <span class="untref-xlarge">89+</span><br />
+            Happy Clients
+          </div>
+          <div class="untref-quarter untref-section">
+            <span class="untref-xlarge">150+</span><br />
+            Meetings
+          </div>
+        </div>
+
+        <button
+          class="untref-button untref-light-grey untref-padding-large untref-section"
+        >
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+      </section>
+
+      <!-- TODO: Testimonials -->
+
+      <!-- TODO: Pricing -->
+
+      <!-- TODO: Contact Section -->
+
+      <!-- Footer -->
+      <footer
+        class="untref-container untref-padding-64 untref-light-grey untref-center untref-opacity untref-xlarge"
+        style="margin: -24px"
+      >
+        <i class="fa fa-facebook-official untref-hover-opacity"></i>
+        <i class="fa fa-instagram untref-hover-opacity"></i>
+        <i class="fa fa-snapchat untref-hover-opacity"></i>
+        <i class="fa fa-pinterest-p untref-hover-opacity"></i>
+        <i class="fa fa-twitter untref-hover-opacity"></i>
+        <i class="fa fa-linkedin untref-hover-opacity"></i>
+        <p class="untref-medium">
+          Powered by
+          <u>UNTREF</u>
+        </p>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
